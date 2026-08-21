@@ -4,10 +4,10 @@
 
 // Compile with Open Watcom C. IA-16 GNU C compiler does not have dos.h
 // Don't forget to setup Open Watcom C with owsetenv.bat
-// Use the small memory model and generate a COM file; this will
+// Use the tiny memory model and generate a COM file; this will
 // put everything (code, data, etc) into a single 64K segment which can be
 // loaded into residency
-// wcl -ms -lcom memtsr.c
+// wcl -mt -lcom memtsr.c
 
 struct T_TSR_DATA {
   char signature[12];
